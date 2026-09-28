@@ -48,5 +48,5 @@ flowchart LR
     C1 & C2 & C3 & C4 --> P[Kafka 2-partition HA]
     P --> R[(Redis Shard/Replica)]
     P --> CH[(ClickHouse Replica)]
-<img width="2016" height="1140" alt="case1_architecture" src="https://github.com/user-attachments/assets/e0abd83d-7daf-4052-b8ae-1ae144e6e735" />
-<img width="2542" height="1005" alt="case1_tradeoff" src="https://github.com/user-attachments/assets/b200531b-c166-42e3-8ddc-86ce2a3a9b16" />
+<img width="2542" height="1005" alt="case1_tradeoff" src="https://github.com/user-attachments/assets/33285c1a-b398-4085-a276-5bd2d773122c" />
+<img width="2016" height="1140" alt="case1_architecture" src="https://github.com/user-attachments/assets/dbe2e3c1-7587-46de-b03a-6a2f39b1db20" />
