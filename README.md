@@ -7,7 +7,6 @@ AI 데이터센터 수집 구조를 N+2 멀티 클러스터 Scale-out으로 전�
 |---|---|---|---|
 | 초당 50만 포인트 구조의 병목·레이턴시 | N+2 수집 그룹 × 4개 클러스터로 무중단 Scale-out, ALB 재구성 | 서버 비용 **4배** | 처리량 **4.7배**, CPU **25% 이하** |
 
-![Case 1 Architecture](images/case1_architecture.png)
 
 ## 제약 조건
 - **환경**: AI GW급 GPU 서버가 들어선 코로케이션 IDC. 설비가 **매초 수백만 포인트**의 운영 데이터를 만들어 냅니다.
@@ -30,7 +29,6 @@ AI 데이터센터 수집 구조를 N+2 멀티 클러스터 Scale-out으로 전�
 - **효과**: 처리량 **4.7배** 증가
 - 비용 증가율보다 처리량 증가율이 커서 **포인트당 처리 비용은 약 15% 감소** (4 ÷ 4.7 ≈ 0.85)
 
-![Case 1 Trade-off](images/case1_tradeoff.png)
 
 ## 개선 효과
 | 지표 | Before | After |
@@ -51,5 +49,4 @@ flowchart LR
     P --> R[(Redis Shard/Replica)]
     P --> CH[(ClickHouse Replica)]
 <img width="2016" height="1140" alt="case1_architecture" src="https://github.com/user-attachments/assets/e0abd83d-7daf-4052-b8ae-1ae144e6e735" />
-<img width="2542" height="1005" alt="case1_tradeoff" src="https://github.com/user-attachments/assets/b8383fa2-c2aa-4346-9899-da9f3c4ae191" />
-
+<img width="2542" height="1005" alt="case1_tradeoff" src="https://github.com/user-attachments/assets/b200531b-c166-42e3-8ddc-86ce2a3a9b16" />
